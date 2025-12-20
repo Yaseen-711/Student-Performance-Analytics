@@ -170,4 +170,16 @@ class DataPreview:
             print(self.df[cols].describe())
 preview=DataPreview(df)
 
-
+def Performance_relationships():
+    print("="*40,"Performance Relationships","="*40)
+    print("1. Heatmap between all attributes ")
+    print("2. Scatter Plot of Percentage vs Sleep time")
+    print("3. Scatter Plot of Percentage vs Screen time")
+    print("4. Line Chart of Gender vs Subject Marks")
+    print("5. Exit to Main Menu")
+    try:
+        Option=int(input("Select option :"))
+        if Option==1:
+            pass
+    except Exception:
+        print("Error\nEnter correct input")
