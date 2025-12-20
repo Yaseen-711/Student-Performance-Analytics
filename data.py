@@ -86,9 +86,14 @@ def plot_section_performance(df):
     plt.ylabel("Percentage")
     plt.show()
 
-def gender_performance(df):
-    sns.boxplot(x='gender', y='percentage', data=df)
-    plt.title("Gender-wise Performance Comparison")
+#Gender wise performance - Line chart
+def gender_subject_line(df):
+    df.groupby('gender')[marks_cols].mean().T.plot(marker='o', figsize=(10,6))
+    plt.title("Subject-wise Average Marks by Gender")
+    plt.xlabel("Subjects")
+    plt.ylabel("Average Marks")
+    plt.ylim(0, 50)
+    plt.grid(alpha=0.4)
     plt.show()
 
 #Average overall percentage section wise - line chart
@@ -163,6 +168,6 @@ class DataPreview:
             print(self.df.describe())
         else:
             print(self.df[cols].describe())
-
 preview=DataPreview(df)
+
 
