@@ -1,6 +1,6 @@
 # *Student Academic Performance & Lifestyle Impact Analyzer*
 
-##Overview
+## Overview
 
 This project analyzes student academic performance and studies the effect of lifestyle factors such as sleep hours and screen time using Python. The analysis is performed through a menu-driven, terminal-based program.
 
